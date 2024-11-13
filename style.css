@@ -2,9 +2,12 @@
     font-family: 'helvetica';
 }
 
-.logo {
-    height: 39.91px;
-    position: relative;
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: #000000;
 }
 
 body {
@@ -12,10 +15,39 @@ body {
     margin: 0;
 }
 
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 39.91px;
+    position: relative;
+}
+
 .header {
-    background-color: #fafafa;
+    width: 49%;
+    margin: auto;
+}
+
+.main {
     width: 50%;
     margin: auto;
+}
+
+.video {
+    width: 50%;
+    margin: auto;
+}
+
+.footer {
+    width: 50%;
+    margin: auto;
+    margin-top: 300px;
+}
+
+.navbarcontainer {
+    background-color: #fafafa;
 }
 
 .navbar {
@@ -24,6 +56,9 @@ body {
     font-size: 14px;
     justify-content: space-between;
     padding: 0px, 40px;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-top: 10px;
 }
 
 .menu {
@@ -41,20 +76,40 @@ body {
 .menuextralink {
     display: flex;
     margin: -15px, 0px, 0px;
-    color: #6c6c6c;
+    color: #000000;
+    justify-content: end;
 }
 
+.extralinkbox {
+    margin-top: -15px;
+    padding-right: 10px;
+}
+.extralinktext {
+    font-size: 18px;
+    margin-top: 5px;
+}
 .headerNews {
     display: flex;
-    margin-top: 50px;
+    margin-top: 0px;
     background-color: #f4f4f4;
+    align-items: center;
     /* background-color: red; */
+}
+
+.headertitle {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 26px;
+    color: #000000;
+    padding-top: 10px;
+    padding-right: 30px;
 }
 
 .grayP {
     font-size: 13px;
     color: black;
     opacity: 0.4;
+    margin-bottom: 20px;
 }
 
 #buttonNiigem {
@@ -73,11 +128,52 @@ body {
 
 .textgreen {
     color: #2adb00;
+    font-size: 18px;
 }
+
 .headerinfo {
     display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding-bottom: 50px;
+}
+
+.headerinfotext {
+    font-size: 14px;
+    color: #000000;
+    margin-top: 10px;
 
 }
+
 .headerinfoimg {
     height: 175px;
+    border-radius: 5px;
+}
+
+.headerinfodiv {
+    padding-left: 15px;
+}
+
+.storyimg {
+    height: 235px;
+    border-radius: 5px;
+}
+.storytitle {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+.storygogo {
+    font-size: 26px;
+    margin-right: 5px;
+}
+.storyblue {
+    background-color: #00b0f4;
+    color: #ffffff;
+    font-size: 18px;
+    padding-top: 5px;
+    padding-bottom: 2px;
+    padding-left: 3px;
+    padding-right: 3px;
+    border-radius: 3px;
 }
