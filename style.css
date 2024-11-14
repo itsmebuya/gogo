@@ -14,7 +14,32 @@ body {
     background-color: #FFFFFF;
     margin: 0;
 }
+.linkedimg {
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.linkedimg img{
+    width: 100%;
+    height: 100%;
+    transition-duration: 0.4s;
+}
+.linkedimg img:hover {
+    transform: scale(1.1);
+    filter: brightness(60%);
+}
 
+/* .linkedimg::after {
+    content: "Унших →";
+    visibility: hidden;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.linkedimg:hover ::after {
+    visibility: visible;
+    opacity: 1;
+} */
 .flex {
     display: flex;
     justify-content: space-between;
@@ -26,22 +51,22 @@ body {
 }
 
 .header {
-    width: 49%;
+    width: 1100px;
     margin: auto;
 }
 
 .main {
-    width: 50%;
+    width: 1100px;
     margin: auto;
 }
 
 .video {
-    width: 50%;
+    width: 1100px;
     margin: auto;
 }
 
 .footer {
-    width: 50%;
+    width: 1100px;
     margin: auto;
     margin-top: 300px;
 }
@@ -84,15 +109,20 @@ body {
     margin-top: -15px;
     padding-right: 10px;
 }
+
 .extralinktext {
     font-size: 18px;
     margin-top: 5px;
+    margin-left: 5px;
 }
+
 .headerNews {
     display: flex;
+    background: rgb(244,244,244);
+background: linear-gradient(90deg, rgba(244,244,244,1) 0%, rgba(250,250,250,1) 60%);
     margin-top: 0px;
-    background-color: #f4f4f4;
     align-items: center;
+    border-radius: 10px;
     /* background-color: red; */
 }
 
@@ -112,9 +142,9 @@ body {
     margin-bottom: 20px;
 }
 
-#buttonNiigem {
-    background-color: orange;
-    padding-top: 8px;
+.buttonNiigem {
+    background: rgb(205,30,37);
+    background: linear-gradient(90deg, rgba(205,30,37,1) 0%, rgba(222,116,12,1) 100%);    padding-top: 8px;
     padding-bottom: 8px;
     padding-left: 15px;
     padding-right: 15px;
@@ -123,7 +153,17 @@ body {
     width: fit-content;
     border-radius: 100px;
     margin: 0;
+    transition-duration: 0.2s;
+}
+.buttonNiigem:hover {
+    transform: scaleX(1.1);
+    transform-origin: left center;
+}
 
+.headernewsimg {
+    width: 50%;
+    height: 385px;
+    /* border-radius: 100px; */
 }
 
 .textgreen {
@@ -136,6 +176,7 @@ body {
     justify-content: space-between;
     margin-top: 30px;
     padding-bottom: 50px;
+    gap: 15px;
 }
 
 .headerinfotext {
@@ -151,22 +192,25 @@ body {
 }
 
 .headerinfodiv {
-    padding-left: 15px;
+  width: 25%;
 }
 
 .storyimg {
     height: 235px;
     border-radius: 5px;
 }
+
 .storytitle {
     display: flex;
     align-items: center;
     margin: 0;
 }
+
 .storygogo {
     font-size: 26px;
     margin-right: 5px;
 }
+
 .storyblue {
     background-color: #00b0f4;
     color: #ffffff;
@@ -176,4 +220,23 @@ body {
     padding-left: 3px;
     padding-right: 3px;
     border-radius: 3px;
+}
+.storybox {
+    display: flex;
+    height: 235px;
+    position: relative;
+}
+.storylogo {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    padding: 10px;
+}
+.storytext {
+    color: white;
+    position: absolute;
+    margin-bottom: 5px;
+    font-size: 13px;
+    bottom: 0;
+    padding: 10px;
 }
